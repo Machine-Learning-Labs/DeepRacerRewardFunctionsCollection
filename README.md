@@ -7,7 +7,7 @@ They have been collected from many other authors with the interest of conducting
 
 The classification system is based solely on the input variables used in the function.
 
-* None: None 
+* Void: None of input params 
 * Single: One input var i.e. all_wheels_on_track
 * Double
 * Triple 
@@ -49,18 +49,3 @@ The params dictionary object contains the following key-value pairs:
 ## References
 
 * https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-reward-function-input.html
-
-mkdir None && 
-mkdir Single &&\
-mkdir Double &&\
-mkdir Triple &&\
-mkdir Quadruple&&\
-mkdir Quintuple &&\
-mkdir Sextuple &&\
-mkdir Septuple &&\
-mkdir Octuple &&\
-mkdir Nonuple &&\
-mkdir Decuple &&\
-mkdir Undecuple &&\
-mkdir Duodecuple &&\
-mkdir Tredecuple 
