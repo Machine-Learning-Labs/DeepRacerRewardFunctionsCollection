@@ -4,8 +4,8 @@
     @License: <LICENSE If any>
 '''
 
+def reward_function(params):
 
-def reward(params):
     # Read input parameters ##############################
 
     all_wheels_on_track = params["all_wheels_on_track"]
@@ -24,8 +24,10 @@ def reward(params):
 
     # Constants #########################################
 
-    REWARD_MIN = -100000.0
-    REWARD_MAX = 100000.0
+    REWARD_MIN = -1e5
+    REWARD_MAX = 1e5
+
+    # Logic #########################################
 
     reward = 0
 
