@@ -3,32 +3,33 @@
 This repository includes a compilation of reward functions for the AWS Deep Racer service.
 They have been collected from many other authors with the interest of conducting a comparative study.
 
+All the files include a initial description with:
+
+```python
+
+'''
+    @author: <Name> // <username>
+    @Link: https://github.com/<username>/<repo>
+    @License: <LICENSE If any>
+'''
+
+```
+
 ## Taxonomy
 
 The classification system is based solely on the input variables used in the function.
 
 * Void: None of input params 
 * Single: One input var i.e. all_wheels_on_track
-* Double
-* Triple 
-* Quadruple
-* Quintuple 
-* Sextuple 
-* Septuple 
-* Octuple 
-* Nonuple 
-* Decuple 
-* Undecuple 
-* Duodecuple 
+* Double: Two ...
 * Tredecuple: All the input 
-
 
 ## Input Parameters
 
-The params dictionary object contains the following key-value pairs:
+The ```params``` dictionary object contains the following key-value pairs:
 
-```json
-    {
+```python
+    params = {
         "all_wheels_on_track": Boolean,    # flag to indicate if the vehicle is on the track
         "x": float,                        # vehicle's x-coordinate in meters
         "y": float,                        # vehicle's y-coordinate in meters
@@ -40,7 +41,7 @@ The params dictionary object contains the following key-value pairs:
         "speed": float,                    # vehicle's speed in meters per second (m/s)
         "steering_angle": float,           # vehicle's steering angle in degrees
         "track_width": float,              # width of the track
-        "waypoints": [[float, float], … ], # list of [x,y] as milestones along the track center
+        "waypoints": [[float, float], ... ], # list of [x,y] as milestones along the track center
         "closest_waypoints": [int, int]    # indices of the two nearest waypoints.
     }
 
@@ -48,4 +49,6 @@ The params dictionary object contains the following key-value pairs:
 
 ## References
 
+* https://aws.amazon.com/deepracer/
+* https://aws.amazon.com/deepracer/league/
 * https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-reward-function-input.html
