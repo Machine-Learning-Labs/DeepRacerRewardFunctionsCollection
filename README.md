@@ -47,6 +47,12 @@ The ```params``` dictionary object contains the following key-value pairs:
 
 ```
 
+## FAQ
+
+* __What means v0 & v1?__ v0 It's about the Deep Racer SDK, some examples uses a ```reward_function(param1, param2,...)``` version with params 
+in a verbose way, but last version (v1) uses the dictionary defined before: ```reward_function(params)```.
+
+
 ## References
 
 * https://aws.amazon.com/deepracer/
