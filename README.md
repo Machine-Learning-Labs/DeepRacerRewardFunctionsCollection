@@ -56,5 +56,4 @@ in a verbose way, but last version (v1) uses the dictionary defined before: ```r
 ## References
 
 * https://aws.amazon.com/deepracer/
-* https://aws.amazon.com/deepracer/league/
-* https://docs.aws.amazon.com/deepracer/latest/developerguide/deepracer-reward-function-input.html
+* https://docs.aws.amazon.com/deepracer/latest/developerguide/
