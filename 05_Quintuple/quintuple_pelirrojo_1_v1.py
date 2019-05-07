@@ -4,6 +4,7 @@
     @License: MIT
 '''
 
+
 def reward_function(params):
 
     # Read input parameters ##############################

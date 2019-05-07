@@ -6,6 +6,7 @@
     Inspired on sextuple_tiboonn_v1.py
 '''
 
+
 def reward_function(params):
 
     # Read input parameters ##############################
@@ -34,17 +35,18 @@ def reward_function(params):
     # Set Base Reward
     reward = 1
 
+    # we want the vehicle to continue making progress
     if not all_wheels_on_track:    # Fail them if off Track
         return float(REWARD_MIN)
     elif progress >= 99:
         return float(REWARD_MAX)
-    elif progress >= 75:   # we want the vehicle to continue making progress
+    elif progress >= 75:
         reward = (REWARD_MAX/2) * (progress/100)
-    elif progress >= 50:   # we want the vehicle to continue making progress
+    elif progress >= 50:
         reward = (REWARD_MAX/4) * (progress/100)
-    elif progress >= 25:  # we want the vehicle to continue making progress
+    elif progress >= 25:
         reward = (REWARD_MAX/8) * (progress / 100)
-    elif progress >= 1:  # we want the vehicle to continue making progress
+    elif progress >= 1:
         reward = (REWARD_MAX/10) * (progress / 100)
 
     # Give higher reward if the car is closer to center line and vice versa
